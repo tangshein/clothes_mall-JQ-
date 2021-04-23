@@ -56,5 +56,38 @@ $(function() {
         $('.cart-window').toggleClass('cart-window-active')
     })
 
+    // banner依次显示
+    function bannerAnimate(selector, time) {
+        $(selector).delay(time).animate({
+            top: '-=40px',
+            opacity: 1
+        })
+    }
+    bannerAnimate('.banner-m', 500)
+    bannerAnimate('.banner-rect', 1000)
+    bannerAnimate('.banner-women', 1500)
+    bannerAnimate('.banner-on', 2000)
+    bannerAnimate('.banner-collect', 2500)
+    bannerAnimate('.banner-shop', 3000)
+
+    //banner箭头显示
+    $('.banner').mouseenter(function() {
+        $('.banner-arrow-l,.banner-arrow-r').css('opacity', 1)
+    })
+    $('.banner').mouseleave(function() {
+        $('.banner-arrow-l,.banner-arrow-r').css('opacity', 0)
+    })
+
+    //banner箭头划过变色
+    function arrowChangeColor(selector) {
+        $(selector).mouseenter(function() {
+            $(this).css('background-position', 'bottom')
+        })
+        $(selector).mouseleave(function() {
+            $(this).css('background-position', 'top')
+        })
+    }
+    arrowChangeColor('.banner-arrow-l')
+    arrowChangeColor('.banner-arrow-r')
 
 })

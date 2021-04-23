@@ -1,0 +1,90 @@
+/* banner */
+
+.banner {
+    overflow: hidden;
+    position: relative;
+    width: 1519px;
+    height: 712px;
+    background-color: #ff6600;
+}
+
+.banner-m,
+.banner-rect,
+.banner-women,
+.banner-on,
+.banner-collect,
+.banner-shop {
+    opacity: 0;
+    position: absolute;
+}
+
+.banner-m {
+    top: 197px;
+    left: 344px;
+    width: 409px;
+}
+
+.banner-rect {
+    top: 102px;
+    left: 771px;
+    width: 475px;
+}
+
+.banner-women {
+    top: -65px;
+    left: 380px;
+    width: 709px;
+}
+
+.banner-on {
+    top: 368px;
+    left: 872px;
+    width: 319px;
+}
+
+.banner-collect {
+    top: 475px;
+    left: 304px;
+    color: #fff;
+    font-size: 49px;
+    font-style: italic;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+}
+
+.banner-shop {
+    display: block;
+    top: 543px;
+    left: 305px;
+    padding: 0 32px;
+    width: 28px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 14px;
+    border: 2px solid #fff;
+}
+
+.banner-shop:hover {
+    background-color: #fff;
+}
+
+.banner-arrow-l,
+.banner-arrow-r {
+    opacity: 0;
+    display: block;
+    position: absolute;
+    top: 336px;
+    width: 40px;
+    height: 40px;
+}
+
+.banner-arrow-l {
+    left: 122px;
+    background: url(../assets/large_left.png);
+}
+
+.banner-arrow-r {
+    right: 122px;
+    background: url(../assets/large_right.png);
+}
