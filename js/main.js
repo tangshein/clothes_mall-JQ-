@@ -117,7 +117,7 @@ $(function() {
     columnMove('.column-left')
     columnMove('.column-right')
 
-    // 收藏栏鼠标划过上移 
+    // 收藏栏线条变化 
     function changelength(that, selector, attr, value) {
         that.find(selector).stop().animate({
             [attr]: value
@@ -212,4 +212,19 @@ $(function() {
     sliderMove('.item-new')
     sliderMove('.item-cx')
     sliderMove('.item-hot')
+
+
+    // recommend栏动画
+    function recommendMove(selector) {
+        $(selector).mouseenter(function() {
+            $(this).addClass('recommend-active')
+        })
+        $(selector).mouseleave(function() {
+            $(this).removeClass('recommend-active')
+        })
+    }
+    recommendMove('.item1')
+    recommendMove('.item2')
+    recommendMove('.item3')
+    recommendMove('.item4')
 })
