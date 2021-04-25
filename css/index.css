@@ -88,3 +88,273 @@
     right: 122px;
     background: url(../assets/large_right.png);
 }
+
+
+/* two-column-promo */
+
+.two-column-promo {
+    position: relative;
+    margin-bottom: 112px;
+    height: 327px;
+}
+
+.column-left,
+.column-right {
+    position: absolute;
+    top: -63px;
+    left: 50%;
+    width: 570px;
+    height: 390px;
+    transition: all .5s;
+}
+
+.column-left {
+    margin-left: -585px;
+}
+
+.column-active {
+    top: -78px;
+    box-shadow: 0 10px 20px #000;
+    transition: all .5s;
+    z-index: 9;
+}
+
+.column-left h1,
+.column-right h1 {
+    position: absolute;
+    top: 44px;
+    color: #fff;
+    font-size: 51px;
+}
+
+.column-left h1 {
+    left: 38px;
+}
+
+.column-right h1 {
+    right: 38px;
+}
+
+.column-left .links,
+.column-right .links {
+    position: absolute;
+    top: 338px;
+    left: 37px;
+    font-weight: 700;
+}
+
+.column-left .links a,
+.column-right .links a {
+    margin-right: 15px;
+}
+
+.column-left .links a::after,
+.column-right .links a::after {
+    content: "\e903";
+    margin-left: 5px;
+    font-family: "moon";
+}
+
+.column-left .lines .line-top,
+.column-right .lines .line-top {
+    position: absolute;
+    top: 10%;
+    height: 7px;
+    background-color: #fff;
+}
+
+.column-left .lines .line-top {
+    right: 6%;
+}
+
+.column-right .lines .line-top {
+    left: 6%;
+}
+
+.column-left .lines .line-v-short,
+.column-right .lines .line-v-short {
+    position: absolute;
+    bottom: 22%;
+    width: 7px;
+    background-color: #fff;
+}
+
+.column-left .lines .line-v-short {
+    left: 6.7%;
+}
+
+.column-right .lines .line-v-short {
+    right: 6.7%;
+}
+
+.column-left .lines .line-v-long,
+.column-right .lines .line-v-long {
+    position: absolute;
+    bottom: 22%;
+    width: 7px;
+    background-color: #fff;
+}
+
+.column-left .lines .line-v-long {
+    right: 6%;
+}
+
+.column-right .lines .line-v-long {
+    left: 6%;
+}
+
+.column-left .lines .line-bottom,
+.column-right .lines .line-bottom {
+    position: absolute;
+    bottom: 22%;
+    height: 7px;
+    background-color: #fff;
+}
+
+.column-left .lines .line-bottom {
+    right: 6%;
+}
+
+.column-right .lines .line-bottom {
+    left: 6%;
+}
+
+
+/* tab栏 */
+
+.tab-prod {
+    text-align: center;
+    margin-bottom: 112px;
+}
+
+.tab-prod a {
+    color: #9b9b9c;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.tab-prod span {
+    display: inline-block;
+    margin: 7px 20px;
+    width: 30px;
+    height: 4px;
+    background-color: #e2214b;
+    border-radius: 2px;
+}
+
+.tab-prod .prod-active {
+    color: #272727;
+}
+
+.tab-item {
+    position: relative;
+    margin-top: 30px;
+    height: 519px;
+}
+
+.item-new,
+.item-cx,
+.item-hot {
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    width: 1140px;
+    height: 519px;
+}
+
+.item-cx {
+    display: none;
+}
+
+.item-hot {
+    display: none;
+}
+
+.item-new ul,
+.item-cx ul,
+.item-hot ul {
+    position: absolute;
+    left: -1172px;
+    width: 99999px;
+}
+
+.item-new li,
+.item-cx li,
+.item-hot li {
+    float: left;
+    margin-right: 30px;
+}
+
+.item-new li img,
+.item-cx li img,
+.item-hot li img {
+    width: 263px;
+    height: 271px;
+    vertical-align: bottom;
+}
+
+.item-content {
+    padding: 16px 17px 13px;
+    width: 229px;
+    background: #FFFFFF;
+}
+
+.item-content .top h3 {
+    float: left;
+    line-height: 23px;
+}
+
+.item-content .top h3 a {
+    color: #272727;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.item-content .top .price {
+    display: block;
+    color: #272727;
+    line-height: 23px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item-content .bottom .pro-cat {
+    display: block;
+    color: #9b9b9c;
+    line-height: 23px;
+    letter-spacing: .4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.item-content .bottom .star {
+    color: #9b9b9c;
+}
+
+.item-content .bottom .star.active {
+    color: #eabe12;
+}
+
+.mo-star:before {
+    content: "\e91f";
+    font-size: 12px;
+    font-family: 'moon';
+}
+
+.tab-arrow-l,
+.tab-arrow-r {
+    font-family: 'moon';
+    position: absolute;
+    top: 156px;
+    color: #9b9b9c;
+    font-size: 31px;
+    cursor: pointer;
+}
+
+.tab-arrow-l {
+    left: -50px;
+}
+
+.tab-arrow-r {
+    right: -50px;
+}

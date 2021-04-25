@@ -474,3 +474,65 @@
 .cart-foot a:hover {
     background-color: #e2214b;
 }
+
+
+/* email-area  */
+
+.email-area {
+    padding: 205px 0 210px;
+    background: url(../img/subscribe-bg.jpg) no-repeat center center;
+}
+
+.email-container {
+    margin: auto;
+    width: 570px;
+    height: 153px;
+    text-align: center;
+}
+
+.email-text {
+    margin-bottom: 50px;
+}
+
+.email-text h2 {
+    margin-bottom: 10px;
+    line-height: 28px;
+    color: #fff;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.email-text p {
+    color: #9b9b9c;
+}
+
+#subscribe-form {
+    overflow: hidden;
+    display: inline-block;
+}
+
+#email-form input[type="text"] {
+    float: left;
+    display: block;
+    padding: 0 15px;
+    width: 440px;
+    height: 36px;
+    color: #333;
+    font-size: 12px;
+    background: #fff none repeat scroll 0 0;
+    border: medium none;
+}
+
+#email-form input[type="submit"] {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #272727 none repeat scroll 0 0;
+    border: medium none;
+}

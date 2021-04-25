@@ -57,18 +57,31 @@ $(function() {
     })
 
     // banner依次显示
-    function bannerAnimate(selector, time) {
+    function imgShow(selector, time) {
         $(selector).delay(time).animate({
             top: '-=40px',
             opacity: 1
         })
     }
-    bannerAnimate('.banner-m', 500)
-    bannerAnimate('.banner-rect', 1000)
-    bannerAnimate('.banner-women', 1500)
-    bannerAnimate('.banner-on', 2000)
-    bannerAnimate('.banner-collect', 2500)
-    bannerAnimate('.banner-shop', 3000)
+
+    // 所有img轮流显示
+    function allImgShow() {
+        imgShow('.banner-m', 500)
+        imgShow('.banner-rect', 1000)
+        imgShow('.banner-women', 1500)
+        imgShow('.banner-on', 2000)
+        imgShow('.banner-collect', 2500)
+        imgShow('.banner-shop', 3000)
+        setTimeout(function() {
+            $('.banner').children().not('span').css('opacity', 0).animate({
+                top: '+=40px'
+            }, 1)
+        }, 6000)
+    }
+    allImgShow()
+    setInterval(function() {
+        allImgShow()
+    }, 7000)
 
     //banner箭头显示
     $('.banner').mouseenter(function() {
@@ -90,4 +103,113 @@ $(function() {
     arrowChangeColor('.banner-arrow-l')
     arrowChangeColor('.banner-arrow-r')
 
+
+    // 收藏栏鼠标划过上移 
+    function columnMove(selector) {
+        $(selector).mouseenter(function() {
+            $(this).addClass('column-active')
+        })
+        $(selector).mouseleave(function() {
+            $(this).removeClass('column-active')
+
+        })
+    }
+    columnMove('.column-left')
+    columnMove('.column-right')
+
+    // 收藏栏鼠标划过上移 
+    function changelength(that, selector, attr, value) {
+        that.find(selector).stop().animate({
+            [attr]: value
+        })
+    }
+
+    function columnLineChange(selector) {
+        $(selector).mouseenter(function() {
+            changelength($(this), '.line-v-short', 'height', '28%')
+            changelength($(this), '.line-v-long', 'height', '67%')
+            changelength($(this), '.line-top', 'width', '48%')
+            changelength($(this), '.line-bottom', 'width', '87%')
+        })
+        $(selector).mouseleave(function() {
+            changelength($(this), '.line-v-short', 'height', '0%')
+            changelength($(this), '.line-v-long', 'height', '0%')
+            changelength($(this), '.line-top', 'width', '0%')
+            changelength($(this), '.line-bottom', 'width', '0%')
+        })
+    }
+    columnLineChange('.column-left')
+    columnLineChange('.column-right')
+
+
+    // tab栏点击切换(isItemActive用于轮播图)
+    function tabChange(selector, content) {
+        $(selector).click(function() {
+            $(this).addClass('prod-active').siblings('a').removeClass('prod-active')
+            $('.tab-item>div').hide().removeClass('item-active')
+            $(content).show().addClass('item-active')
+        })
+    }
+    tabChange('.prod-new', '.item-new')
+    tabChange('.prod-cx', '.item-cx')
+    tabChange('.prod-hot', '.item-hot')
+
+    // 轮播图动画
+    function sliderMove(wrapper) {
+        const lis = $(wrapper + ' ul li')
+        let prelength = lis.length
+
+        //同一个用两遍实际就是操作一个
+        const lis_clone1 = lis.clone()
+        const lis_clone2 = lis.clone()
+        lis_clone1.prependTo(wrapper + ' ul')
+        lis_clone2.appendTo(wrapper + ' ul')
+        let n = 0
+        let flag = true
+        $('.tab-arrow-l').click(function() {
+            let isActive = $(wrapper).hasClass('item-active')
+            if (flag == true && isActive && n < 4) {
+                flag = false
+
+                // console.log(n);
+                $(wrapper + ' ul').animate({
+                    left: '-=293'
+                }, function() {
+                    flag = true
+                    n++
+                })
+            } else if (flag == true && isActive) {
+                flag = false
+                $(wrapper + ' ul').css('left', '-1172px').animate({
+                    left: '-=293'
+                }, function() {
+                    flag = true
+                    n = 1
+                })
+            }
+        })
+        $('.tab-arrow-r').click(function() {
+            let isActive = $(wrapper).hasClass('item-active')
+            if (flag == true && isActive && n > -4) {
+                flag = false
+                $(wrapper + ' ul').animate({
+                    left: '+=293'
+                }, function() {
+                    flag = true
+                    n--
+                })
+            } else if (flag == true && isActive) {
+                flag = false
+                $(wrapper + ' ul').css('left', '-1172px').animate({
+                    left: '+=293'
+                }, function() {
+                    flag = true
+                    n = -1
+                })
+            }
+        })
+    }
+    sliderMove('.item-new')
+    sliderMove('.item-cx')
+    sliderMove('.item-hot')
 })
