@@ -308,6 +308,12 @@
     color: #272727;
     font-size: 18px;
     font-weight: 700;
+    transition: all .5s;
+}
+
+.item-content .top h3 a:hover {
+    color: #e2214b;
+    transition: all .5s;
 }
 
 .item-content .top .price {
@@ -325,6 +331,12 @@
     letter-spacing: .4px;
     font-size: 14px;
     font-weight: bold;
+    transition: all .5s;
+}
+
+.item-content .bottom .pro-cat:hover {
+    color: #e2214b;
+    transition: all .5s;
 }
 
 .item-content .bottom .star {
@@ -421,6 +433,7 @@
     line-height: 30px;
     letter-spacing: -0.35px;
     border: 2px solid #fff;
+    transition: all .5s;
 }
 
 .recommend-left .offer-brief-2 h1 {
@@ -484,6 +497,7 @@
     text-transform: uppercase;
     letter-spacing: 0.25px;
     border: 2px solid #fff;
+    transition: all .5s;
 }
 
 .recommend-right {
@@ -537,6 +551,7 @@
     font-size: 14px;
     text-transform: uppercase;
     border: 2px solid #272727;
+    transition: all .5s;
 }
 
 .recommend-right .offer-brief-4 a:hover {
@@ -550,4 +565,262 @@
     box-shadow: 0 10px 20px #000;
     transition: all .5s;
     z-index: 9;
+}
+
+
+/* sale banner */
+
+.sale-banner {
+    position: relative;
+    height: 372px;
+    text-align: center;
+}
+
+.sale-banner-1 {
+    position: absolute;
+    left: 50%;
+    margin-left: -759px;
+}
+
+.sale-banner-2 {
+    position: absolute;
+    left: 50%;
+}
+
+.banner-image img {
+    width: 759px;
+}
+
+.sale-banner .banner-brief {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding-top: 42px;
+    width: 500px;
+    transform: translateX(-50%);
+}
+
+.banner-brief-1 .banner-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 0 5px 2px 10px;
+    line-height: 21px;
+    color: #c7444a;
+    background: #fff none repeat scroll 0 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-radius: 2px;
+}
+
+.sale-banner-1 .banner-brief .banner-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 0 5px 2px 10px;
+    color: #c7444a;
+    border-radius: 2px;
+    letter-spacing: 5px;
+    line-height: 21px;
+    font-size: 14px;
+    background: #fff;
+}
+
+.sale-banner-1 .banner-brief h2 {
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.sale-banner-1 .banner-brief h1 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-size: 72px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 90px;
+}
+
+.sale-banner-1 .banner-brief p {
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 25px;
+    padding: 0 15px;
+    font-family: 'Montserrat';
+}
+
+.sale-banner-2 .banner-brief h3 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.sale-banner-2 .banner-brief h1 {
+    margin-bottom: 22px;
+    color: #ffffff;
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.sale-banner-2 .banner-brief p {
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 25px;
+    padding: 0 15px;
+    font-family: 'Montserrat';
+}
+
+
+/* top-product */
+
+.top-product {
+    margin-top: 108px;
+    text-align: center;
+}
+
+.top-hot {
+    display: block;
+    margin-bottom: 50px;
+    color: #272727;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.top-item {
+    overflow: hidden;
+}
+
+.top-item ul {
+    width: 2000px;
+}
+
+.top-item ul li {
+    float: left;
+    margin-right: 30px;
+}
+
+.top-item li img {
+    width: 263px;
+    vertical-align: bottom;
+}
+
+.top-product .top-item a:hover {
+    color: #e2214b;
+}
+
+.top-more {
+    margin-top: 129px;
+    margin-bottom: 112px;
+    width: 1140px;
+    height: 60px;
+    line-height: 60px;
+    color: #e2214b;
+    font-size: 24px;
+    background-color: #fff;
+}
+
+.top-more i {
+    font-family: 'moon';
+}
+
+
+/* blog */
+
+.blog-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.blog-list li {
+    float: left;
+    width: 570px;
+}
+
+.blog-title h2 {
+    padding-bottom: 10px;
+    color: #212121;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.blog-list {
+    position: relative;
+}
+
+.blog-list .blog-wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 260px;
+}
+
+.blog-list ul {
+    position: absolute;
+    left: -1140px;
+    width: 99999px;
+}
+
+.blog-list .tab-arrow-l,
+.blog-list .tab-arrow-r {
+    display: block;
+    margin-top: -40px;
+}
+
+.blog-list .blog-image img {
+    float: left;
+    width: 263px;
+}
+
+.blog-item .blog-content {
+    float: right;
+    padding: 0 15px;
+    width: 262px;
+    font-family: 'Montserrat';
+}
+
+.blog-item .blog-content .blog-date {
+    display: block;
+    margin-bottom: 12px;
+    color: #9b9b9c;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.blog-item .blog-content h2 {
+    margin-bottom: 24px;
+    line-height: 34px;
+    font-weight: 700;
+}
+
+.blog-item .blog-content h2 a {
+    color: #212121;
+    font-size: 28px;
+    transition: all .5s;
+}
+
+.blog-item .blog-content h2 a:hover {
+    color: #e2214b;
+    transition: all .5s;
+}
+
+.blog-item .blog-content p {
+    color: #6f6f6f;
+    font-weight: 300;
+}
+
+.blog-item .blog-content .blog-author,
+span {
+    color: #9b9b9c;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.blog-item .blog-content .blog-author {
+    margin-top: 25px;
+    margin-left: 5px;
+    font-weight: 700;
 }

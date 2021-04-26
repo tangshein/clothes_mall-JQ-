@@ -155,7 +155,7 @@ $(function() {
     tabChange('.prod-hot', '.item-hot')
 
     // 轮播图动画
-    function sliderMove(wrapper) {
+    function sliderMove(wrapper, n, length, startMarginL) {
         const lis = $(wrapper + ' ul li')
         let prelength = lis.length
 
@@ -164,54 +164,57 @@ $(function() {
         const lis_clone2 = lis.clone()
         lis_clone1.prependTo(wrapper + ' ul')
         lis_clone2.appendTo(wrapper + ' ul')
-        let n = 0
+        let i = 0
         let flag = true
-        $('.tab-arrow-l').click(function() {
+        $(wrapper).siblings('.tab-arrow-l').click(function() {
             let isActive = $(wrapper).hasClass('item-active')
-            if (flag == true && isActive && n < 4) {
+            if (flag == true && isActive && i < n) {
                 flag = false
 
-                // console.log(n);
+                // console.log(i);
                 $(wrapper + ' ul').animate({
-                    left: '-=293'
+                    left: '-=' + length
                 }, function() {
                     flag = true
-                    n++
+                    i++
+                    console.log(i);
                 })
             } else if (flag == true && isActive) {
                 flag = false
-                $(wrapper + ' ul').css('left', '-1172px').animate({
-                    left: '-=293'
+                console.log(222);
+                console.log(i);
+                $(wrapper + ' ul').css('left', startMarginL).animate({
+                    left: '-=' + length
                 }, function() {
                     flag = true
-                    n = 1
+                    i = 1
                 })
             }
         })
-        $('.tab-arrow-r').click(function() {
+        $(wrapper).siblings('.tab-arrow-r').click(function() {
             let isActive = $(wrapper).hasClass('item-active')
-            if (flag == true && isActive && n > -4) {
+            if (flag == true && isActive && i > -n) {
                 flag = false
                 $(wrapper + ' ul').animate({
-                    left: '+=293'
+                    left: '+=' + length
                 }, function() {
                     flag = true
-                    n--
+                    i--
                 })
             } else if (flag == true && isActive) {
                 flag = false
-                $(wrapper + ' ul').css('left', '-1172px').animate({
-                    left: '+=293'
+                $(wrapper + ' ul').css('left', startMarginL).animate({
+                    left: '+=' + length
                 }, function() {
                     flag = true
-                    n = -1
+                    i = -1
                 })
             }
         })
     }
-    sliderMove('.item-new')
-    sliderMove('.item-cx')
-    sliderMove('.item-hot')
+    sliderMove('.item-new', 4, 293, '-1172px')
+    sliderMove('.item-cx', 4, 293, '-1172px')
+    sliderMove('.item-hot', 4, 293, '-1172px')
 
 
     // recommend栏动画
@@ -227,4 +230,37 @@ $(function() {
     recommendMove('.item2')
     recommendMove('.item3')
     recommendMove('.item4')
+
+
+    // 博客栏轮播图
+    sliderMove('.blog-list .blog-wrapper', 2, 570, '-1140px')
+
+
+    // 品牌栏动画
+    sliderMove('.brand-wrapper', 4, 189, '-756px')
+
+    // 返回顶部箭头
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 1000) {
+            $('#scroll-up').fadeIn()
+        } else {
+            $('#scroll-up').fadeOut()
+        };
+    })
+    $('#scroll-up').mouseenter(function() {
+        $(this).stop().animate({
+            bottom: '-=5px'
+        })
+    }).click(function() {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 1500)
+    })
+
+    $('#scroll-up').mouseleave(function() {
+        $(this).stop().animate({
+            bottom: '35px'
+        })
+    })
+
 })

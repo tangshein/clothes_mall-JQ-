@@ -114,6 +114,10 @@
 
 /* header-bottom */
 
+.header-bottom {
+    background-color: #fff;
+}
+
 .logo {
     display: block;
     float: left;
@@ -479,6 +483,7 @@
 /* email-area  */
 
 .email-area {
+    margin-top: 148px;
     padding: 205px 0 210px;
     background: url(../img/subscribe-bg.jpg) no-repeat center center;
 }
@@ -508,14 +513,14 @@
     color: #9b9b9c;
 }
 
-#subscribe-form {
+#email-form {
     overflow: hidden;
     display: inline-block;
 }
 
 #email-form input[type="text"] {
-    float: left;
     display: block;
+    float: left;
     padding: 0 15px;
     width: 440px;
     height: 36px;
@@ -535,4 +540,198 @@
     text-transform: uppercase;
     background: #272727 none repeat scroll 0 0;
     border: medium none;
+    transition: all .5s;
+}
+
+#email-form input[type="submit"]:hover {
+    background: #e2214b;
+    transition: all .5s;
+}
+
+
+/* brand */
+
+.brand {
+    padding: 112px 0;
+    background: #ffffff;
+}
+
+.brand-title {
+    width: 165px;
+}
+
+.brand-title h1 {
+    float: left;
+    line-height: 38px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.brand-slider {
+    position: relative;
+    float: left;
+    margin-left: 45px;
+    padding: 0 100px;
+}
+
+.brand-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 750px;
+    height: 82px;
+}
+
+.brand-wrapper ul {
+    position: absolute;
+    left: -756px;
+    width: 9999px;
+}
+
+.brand-wrapper ul li {
+    float: left;
+    padding: 0 7px;
+    width: 175px;
+}
+
+.brand-slider .tab-arrow-l,
+.brand-slider .tab-arrow-r {
+    margin-top: -130px;
+}
+
+.brand-slider .tab-arrow-l {
+    margin-left: 70px;
+}
+
+.brand-slider .tab-arrow-r {
+    margin-right: 70px;
+}
+
+
+/* footer */
+
+.footer-top {
+    padding: 64px 0;
+    background: #272727;
+    font-size: 14px;
+    font-family: 'Montserrat';
+}
+
+.footer .about {
+    float: left;
+    width: 270px;
+}
+
+.footer .about img {
+    margin-bottom: 25px;
+}
+
+.footer .about p {
+    margin-bottom: 40px;
+    color: #9b9b9c;
+    font-weight: 300;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 55px;
+    margin-bottom: 10px;
+    color: #9b9b9c;
+    font-size: 22px;
+    font-family: 'moon';
+}
+
+.footer .address,
+.footer .collection,
+.footer .shop {
+    float: left;
+    margin-left: 113px;
+}
+
+.footer .address h3,
+.footer .collection h3,
+.footer .shop h3 {
+    margin-top: 6px;
+    margin-bottom: 47px;
+    color: #9b9b9c;
+    line-height: 24px;
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer .address p {
+    color: #9b9b9c;
+    line-height: 24px;
+    font-family: 'Montserrat';
+}
+
+.footer .collection {
+    float: left;
+    margin-left: 113px;
+}
+
+.footer .collection ul li,
+.footer .shop ul li {
+    display: block;
+    line-height: 24px;
+}
+
+.footer .collection ul li a,
+.footer .shop ul li a {
+    color: #9b9b9c;
+    font-size: 14px;
+    transition: all .5s;
+}
+
+.footer .collection ul li a:hover,
+.footer .shop ul li a:hover {
+    color: #e2214b;
+    transition: all .5s;
+}
+
+.footer-bottom {
+    padding: 24px 0;
+    background: #333333 none repeat scroll 0 0;
+}
+
+.footer-bottom .copyright {
+    float: left;
+    color: #9b9b9c;
+    line-height: 24px;
+    font-size: 12px;
+    font-family: 'Montserrat';
+}
+
+.footer-bottom .copyright p a {
+    color: #ddd;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.footer-bottom .copyright p a:hover {
+    color: #e2214b;
+    transition: all .5s;
+}
+
+.footer-bottom .payment {
+    float: right;
+}
+
+
+/* scrollUp */
+
+#scroll-up {
+    display: none;
+    position: fixed;
+    right: 30px;
+    bottom: 35px;
+    width: 30px;
+    height: 30px;
+    color: #e2214b;
+    font-size: 30px;
+    font-family: 'moon';
+}
+
+#scroll-up:hover {
+    bottom: 30px;
 }
