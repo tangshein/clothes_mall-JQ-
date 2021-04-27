@@ -48,6 +48,11 @@ input::-webkit-input-placeholder {
     color: #aeaeae;
 }
 
+button,
+textarea {
+    outline: none;
+}
+
 
 /* 清除浮动 */
 

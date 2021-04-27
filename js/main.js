@@ -263,4 +263,58 @@ $(function() {
         })
     })
 
+    // 点击产品遮罩层动画
+    function prodMaskshow(selector) {
+        $(selector).find('img').click(function() {
+            $('body').css({
+                'overflow-y': 'hidden',
+                'paddingRight': '17px'
+            });
+            $('.modal').fadeIn()
+        })
+    }
+    $('.model-close').click(function() {
+        $('.modal').fadeOut(function() {
+            $('body').css({
+                'overflow-y': 'visible',
+                'paddingRight': 0
+            });
+        })
+    })
+
+    prodMaskshow('.item-new')
+    prodMaskshow('.item-cx')
+    prodMaskshow('.item-hot')
+    prodMaskshow('.top-item')
+
+    // 遮罩层内部tab动画
+    $('.pro-info-tab-list li').click(function() {
+        $(this).addClass('active').siblings().removeClass('active')
+        let name = $(this).text().toLowerCase()
+        $('#' + name).show().siblings().hide()
+            // 图片高度变为一样高
+        let imgH = parseInt($('#' + name).css('height')) + 168
+        $('.product-image').css('height', imgH + 'px')
+    })
+
+    // 数量按钮加减
+    $('.inc').click(function() {
+        let n = $('.cart-plus-minus-box').val()
+        n++
+        $('.cart-plus-minus-box').val(n)
+    })
+    $('.dec').click(function() {
+        let n = $('.cart-plus-minus-box').val()
+        if (n > 0) {
+            n--
+            $('.cart-plus-minus-box').val(n)
+        }
+    })
+
+    // 图片tab切换
+    $('.pro-image-tab-list li').click(function() {
+        $(this).addClass('active').siblings().removeClass('active')
+        let i = $(this).index() + 1
+        $('.pro-image-tab-container>div:nth-child(' + i + ')').show().siblings().hide()
+    })
 })
