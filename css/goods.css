@@ -1,0 +1,98 @@
+/* goods-banner */
+
+.goods-banner {
+    overflow: hidden;
+    height: 348px;
+    background: url(../img/shop-banner.jpg) no-repeat scroll center center;
+}
+
+.goods-banner h2 {
+    margin-top: 42px;
+    color: #e2214b;
+    font-family: playfair display;
+    font-size: 56px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+}
+
+.goods-banner h1 {
+    margin-bottom: 60px;
+    color: #e2214b;
+    letter-spacing: -0.35px;
+    line-height: 100px;
+    font-family: playfair display;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.goods-banner a {
+    display: inline-block;
+    width: 190px;
+    color: #272727;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    border: 2px solid #272727;
+}
+
+
+/* shop-sidebar */
+
+.sin-shop-sidebar {
+    margin-bottom: 36px;
+    width: 263px;
+    background: #fff none repeat scroll 0 0;
+}
+
+.sin-shop-sidebar .title {
+    padding: 10px 17px 10px 20px;
+    line-height: 19px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.sin-shop-sidebar .title h4 {
+    display: block;
+    color: #272727;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.sin-shop-sidebar .title a {
+    display: block;
+    float: right;
+    color: #6f6f6f;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.product-cat .hitarea {
+    display: block;
+    float: right;
+    padding: 15px 17px;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.product-cat>ul>li>a {
+    display: block;
+    padding: 15px 10px 15px 30px;
+    color: #272727;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 21px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.product-cat>ul>li.collapsable>a,
+.product-cat>ul>li>a:hover {
+    color: #e2214b;
+}

@@ -25,10 +25,12 @@ a {
     color: #fff;
     font-size: 12px;
     text-decoration: none;
+    transition: color 0.5s;
 }
 
 a:hover {
     color: #e2214b;
+    transition: color 0.5s;
 }
 
 li {
