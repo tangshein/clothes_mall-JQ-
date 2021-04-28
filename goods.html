@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/goods.css">
     <script src="./js/jQuery.js"></script>
     <script src="./js/common.js"></script>
+    <script src="./js/goods.js"></script>
 </head>
 
 <body>
@@ -135,719 +136,340 @@
     <!-- goods-banner end -->
     <!-- shop-page start -->
     <div class="shop-page">
-        <div class="w">
-            <!-- Shop Single Sidebar Category -->
-            <div class="sin-shop-sidebar">
-                <div class="title clearfix">
-                    <h4>Categories</h4>
-                    <a href=" # ">all</a>
+        <div class="w clearfix">
+            <div class="content-l fl">
+                <!-- Category -->
+                <div class="sin-shop-sidebar">
+                    <div class="title clearfix">
+                        <h4>Categories</h4>
+                        <a href=" # ">all</a>
+                    </div>
+                    <!-- treeview start -->
+                    <div id="cat-treeview " class="product-cat ">
+                        <ul class="treeview ">
+                            <li class="closed">
+                                <div class="hitarea"><i class="mo-caret-right "></i></div><a href="# " class="selected ">Men</a>
+                                <ul class="treeview " style="display: none; ">
+                                    <li><a href="# " class="selected ">T-Shirts</a></li>
+                                    <li><a href="# " class="selected ">Striped Shirts</a></li>
+                                    <li><a href="# " class="selected ">Half Shirts</a></li>
+                                    <li><a href="# " class="selected ">Formal Shirts</a></li>
+                                    <li><a href="# " class="selected ">Bilazers</a></li>
+                                    <li><a href="# " class="selected ">Jackets</a></li>
+                                    <li class="last "><a href="# " class="selected ">Jeans</a></li>
+                                </ul>
+                            </li>
+                            <li class="closed">
+                                <div class="hitarea"><i class="mo-caret-right "></i></div><a href="# " class="selected ">WoMen</a>
+                                <ul class="treeview " style="display: none; ">
+                                    <li><a href="# " class="selected ">T-Shirts</a></li>
+                                    <li><a href="# " class="selected ">Striped Shirts</a></li>
+                                    <li><a href="# " class="selected ">Half Shirts</a></li>
+                                    <li><a href="# " class="selected ">Formal Shirts</a></li>
+                                    <li><a href="# " class="selected ">Bilazers</a></li>
+                                    <li><a href="# " class="selected ">Jackets</a></li>
+                                    <li class="last "><a href="# " class="selected ">Jeans</a></li>
+                                </ul>
+                            </li>
+                            <li class="open">
+                                <div class="hitarea"><i class="mo-caret-right "></i></div><a href="# " class="selected ">Accessories</a>
+                                <ul class="treeview " style="display: none; ">
+                                    <li><a href="# " class="selected ">Footwear</a></li>
+                                    <li><a href="# " class="selected ">Sunglasses</a></li>
+                                    <li><a href="# " class="selected ">Watches</a></li>
+                                    <li class="last "><a href="# " class="selected ">Utilities</a></li>
+                                </ul>
+                            </li>
+                            <li class="closed">
+                                <div class="hitarea"><i class="mo-caret-right "></i></div><a href="# " class="selected ">Jewelry</a>
+                                <ul class="treeview " style="display: none; ">
+                                    <li><a href="# " class="selected ">Footwear</a></li>
+                                    <li><a href="# " class="selected ">Sunglasses</a></li>
+                                    <li><a href="# " class="selected ">Watches</a></li>
+                                    <li class="last "><a href="# " class="selected ">Utilities</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- treeview start -->
-                <div id="cat-treeview " class="product-cat ">
-                    <ul class="treeview ">
-                        <li class="closed expandable ">
-                            <div class="hitarea closed-hitarea expandable-hitarea "><i class="mo-caret-right "></i></div><a href="# " class="selected ">Men</a>
-                            <ul class="treeview " style="display: none; ">
-                                <li><a href="# " class="selected ">T-Shirts</a></li>
-                                <li><a href="# " class="selected ">Striped Shirts</a></li>
-                                <li><a href="# " class="selected ">Half Shirts</a></li>
-                                <li><a href="# " class="selected ">Formal Shirts</a></li>
-                                <li><a href="# " class="selected ">Bilazers</a></li>
-                                <li><a href="# " class="selected ">Jackets</a></li>
-                                <li class="last "><a href="# " class="selected ">Jeans</a></li>
-                            </ul>
-                        </li>
-                        <li class="closed expandable ">
-                            <div class="hitarea closed-hitarea expandable-hitarea "><i class="mo-caret-right "></i></div><a href="# " class="selected ">WoMen</a>
-                            <ul class="treeview " style="display: none; ">
-                                <li><a href="# " class="selected ">T-Shirts</a></li>
-                                <li><a href="# " class="selected ">Striped Shirts</a></li>
-                                <li><a href="# " class="selected ">Half Shirts</a></li>
-                                <li><a href="# " class="selected ">Formal Shirts</a></li>
-                                <li><a href="# " class="selected ">Bilazers</a></li>
-                                <li><a href="# " class="selected ">Jackets</a></li>
-                                <li class="last "><a href="# " class="selected ">Jeans</a></li>
-                            </ul>
-                        </li>
-                        <li class="open expandable ">
-                            <div class="hitarea open-hitarea expandable-hitarea "><i class="mo-caret-right "></i></div><a href="# " class="selected ">Accessories</a>
-                            <ul class="treeview " style="display: none; ">
-                                <li><a href="# " class="selected ">Footwear</a></li>
-                                <li><a href="# " class="selected ">Sunglasses</a></li>
-                                <li><a href="# " class="selected ">Watches</a></li>
-                                <li class="last "><a href="# " class="selected ">Utilities</a></li>
-                            </ul>
-                        </li>
-                        <li class="closed expandable lastExpandable ">
-                            <div class="hitarea closed-hitarea expandable-hitarea lastExpandable-hitarea "><i class="mo-caret-right "></i></div><a href="# " class="selected ">Jewelry</a>
-                            <ul class="treeview " style="display: none; ">
-                                <li><a href="# " class="selected ">Footwear</a></li>
-                                <li><a href="# " class="selected ">Sunglasses</a></li>
-                                <li><a href="# " class="selected ">Watches</a></li>
-                                <li class="last "><a href="# " class="selected ">Utilities</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Shop Single Sidebar Price -->
-            <div class="sin-shop-sidebar ">
-                <div class="title fix ">
-                    <h4>Price</h4>
-                </div>
-                <!-- Price Range Slide -->
-                <div class="price-range-wrap ">
-                    <p>You Range<input type="text " id="price-amount " readonly=" "></p>
-                    <div id="slider-range " class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ">
-                        <div class="ui-slider-range ui-widget-header ui-corner-all " style="left: 11.25%; width: 20%; "></div><span class="ui-slider-handle ui-state-default ui-corner-all " tabindex="0 " style="left: 11.25%; "></span><span class="ui-slider-handle
-                    ui-state-default ui-corner-all " tabindex="0 " style="left: 31.25%; "></span></div>
-                </div>
-            </div>
-            <!-- Shop Single Sidebar Colors -->
-            <div class="sin-shop-sidebar ">
-                <div class="title fix ">
-                    <h4>Colors</h4>
-                    <a href="# ">all</a>
-                </div>
-                <!-- Product Color -->
-                <div class="product-color ">
-                    <ul>
-                        <li><a href="# "><span class="color color-black "></span> Black</a></li>
-                        <li><a href="# "><span class="color color-pink "></span> Pink</a></li>
-                        <li><a href="# "><span class="color color-blue "></span> Blue</a></li>
-                        <li><a href="# "><span class="color color-gold "></span> Gold</a></li>
-                        <li><a href="# "><span class="color color-brown "></span> Brown</a></li>
-                        <li><a href="# "><span class="color color-purple "></span> Purple</a></li>
-                        <li><a href="# "><span class="color color-green "></span> Green</a></li>
-                        <li><a href="# "><span class="color color-red "></span> Red</a></li>
-                        <li><a href="# "><span class="color color-orange "></span> Orange</a></li>
-                        <li><a href="# "><span class="color color-white "></span> White</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Shop Single Sidebar Size -->
-            <div class="sin-shop-sidebar ">
-                <div class="title fix ">
-                    <h4>Clothing Sizes</h4>
-                    <a href="# ">all</a>
-                </div>
-                <!-- Product Size -->
-                <div class="product-sizes ">
-                    <ul>
-                        <li><a href="# ">s</a></li>
-                        <li><a href="# ">m</a></li>
-                        <li><a href="# ">l</a></li>
-                        <li><a href="# ">xl</a></li>
-                        <li><a href="# ">xxl</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Shop Single Sidebar Brands -->
-            <div class="sin-shop-sidebar ">
-                <div class="title fix ">
-                    <h4>Brands</h4>
-                    <a href="# ">all</a>
-                </div>
-                <!-- Product Brands -->
-                <div class="product-brand " tabindex="0 " style="overflow: hidden; outline: none; ">
-                    <ul>
-                        <li><a href="# ">Armani Jeans</a></li>
-                        <li><a href="# ">Ecko Untld.</a></li>
-                        <li><a href="# ">Custo</a></li>
-                        <li><a href="# ">Caramell</a></li>
-                        <li><a href="# ">Addidas</a></li>
-                        <li><a href="# ">Gucci</a></li>
-                        <li><a href="# ">Polo</a></li>
-                        <li><a href="# ">Armani Jeans</a></li>
-                        <li><a href="# ">Ecko Untld.</a></li>
-                        <li><a href="# ">Custo</a></li>
-                        <li><a href="# ">Caramell</a></li>
-                        <li><a href="# ">Addidas</a></li>
-                        <li><a href="# ">Gucci</a></li>
-                        <li><a href="# ">Polo</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-9 col-md-8 col-xs-12 shop-products ">
-                <div class="row ">
-                    <!-- Top Tool Bar -->
-                    <div class="col-xs-12 ">
-                        <div class="shop-top-toolbar ">
-                            <ul class="view-mode float-left ">
-                                <li class=" "><a href="#grid-view " data-toggle="tab " aria-expanded="false "><i class="mo-grid "></i></a></li>
-                                <li class="active "><a href="#list-view " data-toggle="tab " aria-expanded="true "><i class="mo-list "></i></a></li>
-                            </ul>
-                            <p class="float-right ">Showing 1–9 of 17 results</p>
+                <!-- Price -->
+                <div class="sin-shop-sidebar">
+                    <div class="title clearfix ">
+                        <h4>Price</h4>
+                    </div>
+                    <div class="price-range-wrap ">
+                        <p>You Range $90 - $250</p>
+                        <div id="slider-range">
+                            <div class="slider-line"></div>
+                            <span class="ui-slider-handle" style="left: 11.25%;"></span>
+                            <span class="ui-slider-handle" style="left: 31.25%;"></span>
                         </div>
                     </div>
-                    <div class="tab-content col-xs-12 ">
-                        <div class="tab-pane row " id="grid-view ">
-                            <!-- Single Product -->
-                            <div class="col-lg-4 col-sm-6 ">
-                                <div class="sin-product ">
-                                    <!-- Product Image -->
-                                    <div class="pro-image ">
-                                        <a href="# "><img src="img/product/6.jpg " alt="product "></a>
-                                        <!-- Product Hover Content -->
-                                        <div class="pro-hover fix " style="background-image: url( 'img/product/6.jpg'); ">
-                                            <!-- Product Hover Action -->
-                                            <div class="pro-hover-action animated text-center ">
-                                                <button class="add-cart pro-action "><i class="mo-cart "></i></button>
-                                                <a href="#quick-view " class="quick-view pro-action " data-toggle="modal "><i class="mo-eye "></i></a>
-                                                <button class="wishlist pro-action "><i class="mo-heart "></i></button>
-                                            </div>
-                                            <!-- Product Hover Options -->
-                                            <div class="pro-hover-option ">
-                                                <!-- product Size -->
-                                                <div class="pro-size fix ">
-                                                    <h4>Sizes:</h4>
-                                                    <ul>
-                                                        <li>s</li>
-                                                        <li>xs</li>
-                                                        <li>m</li>
-                                                        <li>l</li>
-                                                        <li>xl</li>
-                                                        <li>xxl</li>
-                                                    </ul>
-                                                </div>
-                                                <!-- product Color -->
-                                                <div class="pro-color fix ">
-                                                    <h4>Colors:</h4>
-                                                    <ul>
-                                                        <li class="blue ">b</li>
-                                                        <li class="orange ">o</li>
-                                                        <li class="green ">g</li>
-                                                        <li class="purple ">p</li>
-                                                        <li class="pink ">p</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Product Content -->
-                                    <div class="pro-content ">
-                                        <div class="top fix ">
-                                            <h3><a href="# ">Settle Jute Bag</a></h3>
-                                            <p class="price float-right ">$ 256</p>
-                                        </div>
-                                        <div class="bottom fix ">
-                                            <a href="# " class="pro-cat float-left ">Utilites</a>
-                                            <div class="ratting float-right ">
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star "></i>
-                                                <i class="mo-star star "></i>
-                                                <i class="mo-star star "></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Product -->
-                            <div class="col-lg-4 col-sm-6 ">
-                                <div class="sin-product ">
-                                    <!-- Product Image -->
-                                    <div class="pro-image ">
-                                        <a href="# "><img src="img/product/7.jpg " alt="product "></a>
-                                        <!-- Product Hover Content -->
-                                        <div class="pro-hover fix " style="background-image: url( 'img/product/7.jpg'); ">
-                                            <!-- Product Hover Action -->
-                                            <div class="pro-hover-action animated text-center ">
-                                                <button class="add-cart pro-action "><i class="mo-cart "></i></button>
-                                                <a href="#quick-view " class="quick-view pro-action " data-toggle="modal "><i class="mo-eye "></i></a>
-                                                <button class="wishlist pro-action "><i class="mo-heart "></i></button>
-                                            </div>
-                                            <!-- Product Hover Options -->
-                                            <div class="pro-hover-option ">
-                                                <!-- product Size -->
-                                                <div class="pro-size fix ">
-                                                    <h4>Sizes:</h4>
-                                                    <ul>
-                                                        <li>s</li>
-                                                        <li>xs</li>
-                                                        <li>m</li>
-                                                        <li>l</li>
-                                                        <li>xl</li>
-                                                        <li>xxl</li>
-                                                    </ul>
-                                                </div>
-                                                <!-- product Color -->
-                                                <div class="pro-color fix ">
-                                                    <h4>Colors:</h4>
-                                                    <ul>
-                                                        <li class="blue ">b</li>
-                                                        <li class="orange ">o</li>
-                                                        <li class="green ">g</li>
-                                                        <li class="purple ">p</li>
-                                                        <li class="pink ">p</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Product Content -->
-                                    <div class="pro-content ">
-                                        <div class="top fix ">
-                                            <h3><a href="# ">Binchotan Mask</a></h3>
-                                            <p class="price float-right ">$ 99</p>
-                                        </div>
-                                        <div class="bottom fix ">
-                                            <a href="# " class="pro-cat float-left ">Beauty</a>
-                                            <div class="ratting float-right ">
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star "></i>
-                                                <i class="mo-star star "></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Product -->
-                            <div class="col-lg-4 col-sm-6 ">
-                                <div class="sin-product ">
-                                    <!-- Product Image -->
-                                    <div class="pro-image ">
-                                        <a href="# "><img src="img/product/8.jpg " alt="product "></a>
-                                        <!-- Product Hover Content -->
-                                        <div class="pro-hover fix " style="background-image: url( 'img/product/8.jpg'); ">
-                                            <!-- Product Hover Action -->
-                                            <div class="pro-hover-action animated text-center ">
-                                                <button class="add-cart pro-action "><i class="mo-cart "></i></button>
-                                                <a href="#quick-view " class="quick-view pro-action " data-toggle="modal "><i class="mo-eye "></i></a>
-                                                <button class="wishlist pro-action "><i class="mo-heart "></i></button>
-                                            </div>
-                                            <!-- Product Hover Options -->
-                                            <div class="pro-hover-option ">
-                                                <!-- product Size -->
-                                                <div class="pro-size fix ">
-                                                    <h4>Sizes:</h4>
-                                                    <ul>
-                                                        <li>s</li>
-                                                        <li>xs</li>
-                                                        <li>m</li>
-                                                        <li>l</li>
-                                                        <li>xl</li>
-                                                        <li>xxl</li>
-                                                    </ul>
-                                                </div>
-                                                <!-- product Color -->
-                                                <div class="pro-color fix ">
-                                                    <h4>Colors:</h4>
-                                                    <ul>
-                                                        <li class="blue ">b</li>
-                                                        <li class="orange ">o</li>
-                                                        <li class="green ">g</li>
-                                                        <li class="purple ">p</li>
-                                                        <li class="pink ">p</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Product Content -->
-                                    <div class="pro-content ">
-                                        <div class="top fix ">
-                                            <h3><a href="# ">Dolce Scarf</a></h3>
-                                            <p class="price float-right ">$ 25</p>
-                                        </div>
-                                        <div class="bottom fix ">
-                                            <a href="# " class="pro-cat float-left ">Fashion</a>
-                                            <div class="ratting float-right ">
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star "></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Product -->
-                            <div class="col-lg-4 col-sm-6 ">
-                                <div class="sin-product ">
-                                    <!-- Product Image -->
-                                    <div class="pro-image ">
-                                        <a href="# "><img src="img/product/10.jpg " alt="product "></a>
-                                        <!-- Product Hover Content -->
-                                        <div class="pro-hover fix " style="background-image: url( 'img/product/10.jpg'); ">
-                                            <!-- Product Hover Action -->
-                                            <div class="pro-hover-action animated text-center ">
-                                                <button class="add-cart pro-action "><i class="mo-cart "></i></button>
-                                                <a href="#quick-view " class="quick-view pro-action " data-toggle="modal "><i class="mo-eye "></i></a>
-                                                <button class="wishlist pro-action "><i class="mo-heart "></i></button>
-                                            </div>
-                                            <!-- Product Hover Options -->
-                                            <div class="pro-hover-option ">
-                                                <!-- product Size -->
-                                                <div class="pro-size fix ">
-                                                    <h4>Sizes:</h4>
-                                                    <ul>
-                                                        <li>s</li>
-                                                        <li>xs</li>
-                                                        <li>m</li>
-                                                        <li>l</li>
-                                                        <li>xl</li>
-                                                        <li>xxl</li>
-                                                    </ul>
-                                                </div>
-                                                <!-- product Color -->
-                                                <div class="pro-color fix ">
-                                                    <h4>Colors:</h4>
-                                                    <ul>
-                                                        <li class="blue ">b</li>
-                                                        <li class="orange ">o</li>
-                                                        <li class="green ">g</li>
-                                                        <li class="purple ">p</li>
-                                                        <li class="pink ">p</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Product Content -->
-                                    <div class="pro-content ">
-                                        <div class="top fix ">
-                                            <h3><a href="# ">Cowboy Hat</a></h3>
-                                            <p class="price float-right ">$ 256</p>
-                                        </div>
-                                        <div class="bottom fix ">
-                                            <a href="# " class="pro-cat float-left ">Skinny Fit </a>
-                                            <div class="ratting float-right ">
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star "></i>
-                                                <i class="mo-star star "></i>
-                                                <i class="mo-star star "></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Product -->
-                            <div class="col-lg-4 col-sm-6 ">
-                                <div class="sin-product ">
-                                    <!-- Product Image -->
-                                    <div class="pro-image ">
-                                        <a href="# "><img src="img/product/11.jpg " alt="product "></a>
-                                        <!-- Product Hover Content -->
-                                        <div class="pro-hover fix " style="background-image: url( 'img/product/11.jpg'); ">
-                                            <!-- Product Hover Action -->
-                                            <div class="pro-hover-action animated text-center ">
-                                                <button class="add-cart pro-action "><i class="mo-cart "></i></button>
-                                                <a href="#quick-view " class="quick-view pro-action " data-toggle="modal "><i class="mo-eye "></i></a>
-                                                <button class="wishlist pro-action "><i class="mo-heart "></i></button>
-                                            </div>
-                                            <!-- Product Hover Options -->
-                                            <div class="pro-hover-option ">
-                                                <!-- product Size -->
-                                                <div class="pro-size fix ">
-                                                    <h4>Sizes:</h4>
-                                                    <ul>
-                                                        <li>s</li>
-                                                        <li>xs</li>
-                                                        <li>m</li>
-                                                        <li>l</li>
-                                                        <li>xl</li>
-                                                        <li>xxl</li>
-                                                    </ul>
-                                                </div>
-                                                <!-- product Color -->
-                                                <div class="pro-color fix ">
-                                                    <h4>Colors:</h4>
-                                                    <ul>
-                                                        <li class="blue ">b</li>
-                                                        <li class="orange ">o</li>
-                                                        <li class="green ">g</li>
-                                                        <li class="purple ">p</li>
-                                                        <li class="pink ">p</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Product Content -->
-                                    <div class="pro-content ">
-                                        <div class="top fix ">
-                                            <h3><a href="# ">Jamaica Sweater</a></h3>
-                                            <p class="price float-right ">$ 99</p>
-                                        </div>
-                                        <div class="bottom fix ">
-                                            <a href="# " class="pro-cat float-left ">Womens wear</a>
-                                            <div class="ratting float-right ">
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star "></i>
-                                                <i class="mo-star star "></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Product -->
-                            <div class="col-lg-4 col-sm-6 ">
-                                <div class="sin-product ">
-                                    <!-- Product Image -->
-                                    <div class="pro-image ">
-                                        <a href="# "><img src="img/product/12.jpg " alt="product "></a>
-                                        <!-- Product Hover Content -->
-                                        <div class="pro-hover fix " style="background-image: url( 'img/product/12.jpg'); ">
-                                            <!-- Product Hover Action -->
-                                            <div class="pro-hover-action animated text-center ">
-                                                <button class="add-cart pro-action "><i class="mo-cart "></i></button>
-                                                <a href="#quick-view " class="quick-view pro-action " data-toggle="modal "><i class="mo-eye "></i></a>
-                                                <button class="wishlist pro-action "><i class="mo-heart "></i></button>
-                                            </div>
-                                            <!-- Product Hover Options -->
-                                            <div class="pro-hover-option ">
-                                                <!-- product Size -->
-                                                <div class="pro-size fix ">
-                                                    <h4>Sizes:</h4>
-                                                    <ul>
-                                                        <li>s</li>
-                                                        <li>xs</li>
-                                                        <li>m</li>
-                                                        <li>l</li>
-                                                        <li>xl</li>
-                                                        <li>xxl</li>
-                                                    </ul>
-                                                </div>
-                                                <!-- product Color -->
-                                                <div class="pro-color fix ">
-                                                    <h4>Colors:</h4>
-                                                    <ul>
-                                                        <li class="blue ">b</li>
-                                                        <li class="orange ">o</li>
-                                                        <li class="green ">g</li>
-                                                        <li class="purple ">p</li>
-                                                        <li class="pink ">p</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Product Content -->
-                                    <div class="pro-content ">
-                                        <div class="top fix ">
-                                            <h3><a href="# ">Addidas Leather</a></h3>
-                                            <p class="price float-right ">$ 25</p>
-                                        </div>
-                                        <div class="bottom fix ">
-                                            <a href="# " class="pro-cat float-left ">Mens shoe</a>
-                                            <div class="ratting float-right ">
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star "></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Product -->
-                            <div class="col-lg-4 col-sm-6 ">
-                                <div class="sin-product ">
-                                    <!-- Product Image -->
-                                    <div class="pro-image ">
-                                        <a href="# "><img src="img/product/5.jpg " alt="product "></a>
-                                        <span class="pro-label great-deal ">great deals</span>
-                                        <!-- Product Hover Content -->
-                                        <div class="pro-hover fix " style="background-image: url( 'img/product/5.jpg'); ">
-                                            <!-- Product Hover Action -->
-                                            <div class="pro-hover-action animated text-center ">
-                                                <button class="add-cart pro-action "><i class="mo-cart "></i></button>
-                                                <a href="#quick-view " class="quick-view pro-action " data-toggle="modal "><i class="mo-eye "></i></a>
-                                                <button class="wishlist pro-action "><i class="mo-heart "></i></button>
-                                            </div>
-                                            <!-- Product Hover Options -->
-                                            <div class="pro-hover-option ">
-                                                <!-- product Size -->
-                                                <div class="pro-size fix ">
-                                                    <h4>Sizes:</h4>
-                                                    <ul>
-                                                        <li>s</li>
-                                                        <li>xs</li>
-                                                        <li>m</li>
-                                                        <li>l</li>
-                                                        <li>xl</li>
-                                                        <li>xxl</li>
-                                                    </ul>
-                                                </div>
-                                                <!-- product Color -->
-                                                <div class="pro-color fix ">
-                                                    <h4>Colors:</h4>
-                                                    <ul>
-                                                        <li class="blue ">b</li>
-                                                        <li class="orange ">o</li>
-                                                        <li class="green ">g</li>
-                                                        <li class="purple ">p</li>
-                                                        <li class="pink ">p</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Product Content -->
-                                    <div class="pro-content ">
-                                        <div class="top fix ">
-                                            <h3><a href="# ">Stripped Wool</a></h3>
-                                            <p class="price float-right ">$ 46</p>
-                                        </div>
-                                        <div class="bottom fix ">
-                                            <a href="# " class="pro-cat float-left ">Mens wear</a>
-                                            <div class="ratting float-right ">
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Product -->
-                            <div class="col-lg-4 col-sm-6 ">
-                                <div class="sin-product ">
-                                    <!-- Product Image -->
-                                    <div class="pro-image ">
-                                        <a href="# "><img src="img/product/9.jpg " alt="product "></a>
-                                        <span class="pro-label great-deal ">great deals</span>
-                                        <!-- Product Hover Content -->
-                                        <div class="pro-hover fix " style="background-image: url( 'img/product/9.jpg'); ">
-                                            <!-- Product Hover Action -->
-                                            <div class="pro-hover-action animated text-center ">
-                                                <button class="add-cart pro-action "><i class="mo-cart "></i></button>
-                                                <a href="#quick-view " class="quick-view pro-action " data-toggle="modal "><i class="mo-eye "></i></a>
-                                                <button class="wishlist pro-action "><i class="mo-heart "></i></button>
-                                            </div>
-                                            <!-- Product Hover Options -->
-                                            <div class="pro-hover-option ">
-                                                <!-- product Size -->
-                                                <div class="pro-size fix ">
-                                                    <h4>Sizes:</h4>
-                                                    <ul>
-                                                        <li>s</li>
-                                                        <li>xs</li>
-                                                        <li>m</li>
-                                                        <li>l</li>
-                                                        <li>xl</li>
-                                                        <li>xxl</li>
-                                                    </ul>
-                                                </div>
-                                                <!-- product Color -->
-                                                <div class="pro-color fix ">
-                                                    <h4>Colors:</h4>
-                                                    <ul>
-                                                        <li class="blue ">b</li>
-                                                        <li class="orange ">o</li>
-                                                        <li class="green ">g</li>
-                                                        <li class="purple ">p</li>
-                                                        <li class="pink ">p</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Product Content -->
-                                    <div class="pro-content ">
-                                        <div class="top fix ">
-                                            <h3><a href="# ">Backel’s Skin Gel</a></h3>
-                                            <p class="price float-right ">$ 46</p>
-                                        </div>
-                                        <div class="bottom fix ">
-                                            <a href="# " class="pro-cat float-left ">Mens Beauty</a>
-                                            <div class="ratting float-right ">
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Product -->
-                            <div class="col-lg-4 col-sm-6 ">
-                                <div class="sin-product ">
-                                    <!-- Product Image -->
-                                    <div class="pro-image ">
-                                        <a href="# "><img src="img/product/13.jpg " alt="product "></a>
-                                        <!-- Product Hover Content -->
-                                        <div class="pro-hover fix " style="background-image: url( 'img/product/13.jpg'); ">
-                                            <!-- Product Hover Action -->
-                                            <div class="pro-hover-action animated text-center ">
-                                                <button class="add-cart pro-action "><i class="mo-cart "></i></button>
-                                                <a href="#quick-view " class="quick-view pro-action " data-toggle="modal "><i class="mo-eye "></i></a>
-                                                <button class="wishlist pro-action "><i class="mo-heart "></i></button>
-                                            </div>
-                                            <!-- Product Hover Options -->
-                                            <div class="pro-hover-option ">
-                                                <!-- product Size -->
-                                                <div class="pro-size fix ">
-                                                    <h4>Sizes:</h4>
-                                                    <ul>
-                                                        <li>s</li>
-                                                        <li>xs</li>
-                                                        <li>m</li>
-                                                        <li>l</li>
-                                                        <li>xl</li>
-                                                        <li>xxl</li>
-                                                    </ul>
-                                                </div>
-                                                <!-- product Color -->
-                                                <div class="pro-color fix ">
-                                                    <h4>Colors:</h4>
-                                                    <ul>
-                                                        <li class="blue ">b</li>
-                                                        <li class="orange ">o</li>
-                                                        <li class="green ">g</li>
-                                                        <li class="purple ">p</li>
-                                                        <li class="pink ">p</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Product Content -->
-                                    <div class="pro-content ">
-                                        <div class="top fix ">
-                                            <h3><a href="# ">Seqkl Watch</a></h3>
-                                            <p class="price float-right ">$ 119</p>
-                                        </div>
-                                        <div class="bottom fix ">
-                                            <a href="# " class="pro-cat float-left ">Accssories</a>
-                                            <div class="ratting float-right ">
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                                <i class="mo-star star active "></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 text-center ">
-                                <div class="more-product ">
-                                    <a class="shop-link " href="# "><i class="mo-more "></i></a>
-                                </div>
-                            </div>
+                </div>
+                <!-- COLORS -->
+                <div class="sin-shop-sidebar">
+                    <div class="title clearfix ">
+                        <h4>Colors</h4>
+                        <a href="# ">all</a>
+                    </div>
+                    <!-- Product Color -->
+                    <div class="product-color ">
+                        <ul class="clearfix">
+                            <li><a href="# "><span class="color color-black "></span> Black</a></li>
+                            <li><a href="# "><span class="color color-pink "></span> Pink</a></li>
+                            <li><a href="# "><span class="color color-blue "></span> Blue</a></li>
+                            <li><a href="# "><span class="color color-gold "></span> Gold</a></li>
+                            <li><a href="# "><span class="color color-brown "></span> Brown</a></li>
+                            <li><a href="# "><span class="color color-purple "></span> Purple</a></li>
+                            <li><a href="# "><span class="color color-green "></span> Green</a></li>
+                            <li><a href="# "><span class="color color-red "></span> Red</a></li>
+                            <li><a href="# "><span class="color color-orange "></span> Orange</a></li>
+                            <li><a href="# "><span class="color color-white "></span> White</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- CLOTHING SIZES -->
+                <div class="sin-shop-sidebar">
+                    <div class="title clearfix">
+                        <h4>Clothing Sizes</h4>
+                        <a href="# ">all</a>
+                    </div>
+                    <!-- Product Size -->
+                    <div class="product-sizes ">
+                        <ul class="clearfix">
+                            <li><a href="# ">s</a></li>
+                            <li><a href="# ">m</a></li>
+                            <li><a href="# ">l</a></li>
+                            <li><a href="# ">xl</a></li>
+                            <li><a href="# ">xxl</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Brands -->
+                <div class="sin-shop-sidebar">
+                    <div class="title clearfix">
+                        <h4>Brands</h4>
+                        <a href="# ">all</a>
+                    </div>
+                    <!-- Product Brands -->
+                    <div class="product-brand clearfix">
+                        <ul class="clearfix">
+                            <li><a href="# ">Armani Jeans</a></li>
+                            <li><a href="# ">Ecko Untld.</a></li>
+                            <li><a href="# ">Custo</a></li>
+                            <li><a href="# ">Caramell</a></li>
+                            <li><a href="# ">Addidas</a></li>
+                            <li><a href="# ">Gucci</a></li>
+                            <li><a href="# ">Polo</a></li>
+                            <li><a href="# ">Armani Jeans</a></li>
+                            <li><a href="# ">Ecko Untld.</a></li>
+                            <li><a href="# ">Custo</a></li>
+                            <li><a href="# ">Caramell</a></li>
+                            <li><a href="# ">Addidas</a></li>
+                            <li><a href="# ">Gucci</a></li>
+                            <li><a href="# ">Polo</a></li>
+                        </ul>
+                        <div class="brand-scroll">
+                            <div class="sroll-line"></div>
                         </div>
-                        <div class="tab-pane row active " id="list-view ">
-                            <div class="sin-product-list fix ">
-                                <div class="list-pro-image col-lg-4 col-sm-5 col-xs-12 ">
+                    </div>
+                </div>
+            </div>
+            <div class="content-r fr">
+                <!-- Top Bar -->
+                <div class="shop-top-toolbar">
+                    <ul class="view-mode fl">
+                        <li class="active"><a href="javascript:;"><i class="mo-grid "></i></a></li>
+                        <li><a href="javascript:;"><i class="mo-list "></i></a></li>
+                    </ul>
+                    <p class="fr">Showing 1–9 of 17 results</p>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-gird">
+                        <ul class="clearfix">
+                            <li>
+                                <img src="./img/product/9.jpg" alt="">
+                                <div class="item-content">
+                                    <div class="top clearfix">
+                                        <h3><a href="#">护肤</a></h3>
+                                        <p class="price fr">$ 46</p>
+                                    </div>
+                                    <div class="bottom clearfix">
+                                        <a href="#" class="pro-cat fl">男士护肤</a>
+                                        <div class="ratting fr">
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/product/10.jpg" alt="">
+                                <div class="item-content">
+                                    <div class="top clearfix">
+                                        <h3><a href="#">礼帽</a></h3>
+                                        <p class="price fr">$ 256</p>
+                                    </div>
+                                    <div class="bottom clearfix">
+                                        <a href="#" class="pro-cat fl">女装</a>
+                                        <div class="ratting fr">
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star"></i>
+                                            <i class="mo-star star"></i>
+                                            <i class="mo-star star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/product/11.jpg" alt="">
+                                <div class="item-content">
+                                    <div class="top clearfix">
+                                        <h3><a href="#">毛衣</a></h3>
+                                        <p class="price fr">$ 99</p>
+                                    </div>
+                                    <div class="bottom clearfix">
+                                        <a href="#" class="pro-cat fl">配件</a>
+                                        <div class="ratting fr">
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/product/12.jpg" alt="">
+                                <div class="item-content">
+                                    <div class="top clearfix">
+                                        <h3><a href="#">皮革</a></h3>
+                                        <p class="price fr">$ 25</p>
+                                    </div>
+                                    <div class="bottom clearfix">
+                                        <a href="#" class="pro-cat fl">男鞋</a>
+                                        <div class="ratting fr">
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/product/9.jpg" alt="">
+                                <div class="item-content">
+                                    <div class="top clearfix">
+                                        <h3><a href="#">护肤</a></h3>
+                                        <p class="price fr">$ 46</p>
+                                    </div>
+                                    <div class="bottom clearfix">
+                                        <a href="#" class="pro-cat fl">男士护肤</a>
+                                        <div class="ratting fr">
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/product/10.jpg" alt="">
+                                <div class="item-content">
+                                    <div class="top clearfix">
+                                        <h3><a href="#">礼帽</a></h3>
+                                        <p class="price fr">$ 256</p>
+                                    </div>
+                                    <div class="bottom clearfix">
+                                        <a href="#" class="pro-cat fl">女装</a>
+                                        <div class="ratting fr">
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star"></i>
+                                            <i class="mo-star star"></i>
+                                            <i class="mo-star star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/product/11.jpg" alt="">
+                                <div class="item-content">
+                                    <div class="top clearfix">
+                                        <h3><a href="#">毛衣</a></h3>
+                                        <p class="price fr">$ 99</p>
+                                    </div>
+                                    <div class="bottom clearfix">
+                                        <a href="#" class="pro-cat fl">配件</a>
+                                        <div class="ratting fr">
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/product/12.jpg" alt="">
+                                <div class="item-content">
+                                    <div class="top clearfix">
+                                        <h3><a href="#">皮革</a></h3>
+                                        <p class="price fr">$ 25</p>
+                                    </div>
+                                    <div class="bottom clearfix">
+                                        <a href="#" class="pro-cat fl">男鞋</a>
+                                        <div class="ratting fr">
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/product/12.jpg" alt="">
+                                <div class="item-content">
+                                    <div class="top clearfix">
+                                        <h3><a href="#">皮革</a></h3>
+                                        <p class="price fr">$ 25</p>
+                                    </div>
+                                    <div class="bottom clearfix">
+                                        <a href="#" class="pro-cat fl">男鞋</a>
+                                        <div class="ratting fr">
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-list" style="display: none;">
+                        <ul>
+                            <li class="sin-product-list clearfix">
+                                <div class="list-pro-image fl">
                                     <a href="# "><img src="img/list-product/1.jpg " alt="product "></a>
                                     <span class="list-pro-label ">sale</span>
                                 </div>
-                                <div class="list-pro-content col-lg-6 col-sm-7 col-xs-12 ">
+                                <div class="list-pro-content fl">
                                     <h2><a href="# ">Eurostar Hoodie</a></h2>
-                                    <div class="ratting fix ">
+                                    <div class="ratting clearfix">
                                         <i class="mo-star star active "></i>
                                         <i class="mo-star star active "></i>
                                         <i class="mo-star star active "></i>
@@ -862,14 +484,15 @@
                                         <button class="wishlist list-action "><i class="mo-heart "></i></button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="sin-product-list fix ">
-                                <div class="list-pro-image col-lg-4 col-sm-5 col-xs-12 ">
+                            </li>
+                            <li class="sin-product-list clearfix">
+                                <div class="list-pro-image fl">
                                     <a href="# "><img src="img/list-product/2.jpg " alt="product "></a>
+                                    <span class="list-pro-label ">sale</span>
                                 </div>
-                                <div class="list-pro-content col-lg-6 col-sm-7 col-xs-12 ">
-                                    <h2><a href="# ">Minrova Sleep Wear</a></h2>
-                                    <div class="ratting fix ">
+                                <div class="list-pro-content fl">
+                                    <h2><a href="# ">Eurostar Hoodie</a></h2>
+                                    <div class="ratting clearfix">
                                         <i class="mo-star star active "></i>
                                         <i class="mo-star star active "></i>
                                         <i class="mo-star star active "></i>
@@ -884,14 +507,15 @@
                                         <button class="wishlist list-action "><i class="mo-heart "></i></button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="sin-product-list fix ">
-                                <div class="list-pro-image col-lg-4 col-sm-5 col-xs-12 ">
+                            </li>
+                            <li class="sin-product-list clearfix">
+                                <div class="list-pro-image fl">
                                     <a href="# "><img src="img/list-product/3.jpg " alt="product "></a>
+                                    <span class="list-pro-label ">sale</span>
                                 </div>
-                                <div class="list-pro-content col-lg-6 col-sm-7 col-xs-12 ">
-                                    <h2><a href="# ">Print Cutout Top</a></h2>
-                                    <div class="ratting fix ">
+                                <div class="list-pro-content fl">
+                                    <h2><a href="# ">Eurostar Hoodie</a></h2>
+                                    <div class="ratting clearfix">
                                         <i class="mo-star star active "></i>
                                         <i class="mo-star star active "></i>
                                         <i class="mo-star star active "></i>
@@ -906,14 +530,15 @@
                                         <button class="wishlist list-action "><i class="mo-heart "></i></button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="sin-product-list fix ">
-                                <div class="list-pro-image col-lg-4 col-sm-5 col-xs-12 ">
+                            </li>
+                            <li class="sin-product-list clearfix">
+                                <div class="list-pro-image fl">
                                     <a href="# "><img src="img/list-product/4.jpg " alt="product "></a>
+                                    <span class="list-pro-label ">sale</span>
                                 </div>
-                                <div class="list-pro-content col-lg-6 col-sm-7 col-xs-12 ">
-                                    <h2><a href="# ">Shanos Matte Blue</a></h2>
-                                    <div class="ratting fix ">
+                                <div class="list-pro-content fl">
+                                    <h2><a href="# ">Eurostar Hoodie</a></h2>
+                                    <div class="ratting clearfix">
                                         <i class="mo-star star active "></i>
                                         <i class="mo-star star active "></i>
                                         <i class="mo-star star active "></i>
@@ -928,14 +553,15 @@
                                         <button class="wishlist list-action "><i class="mo-heart "></i></button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="sin-product-list fix ">
-                                <div class="list-pro-image col-lg-4 col-sm-5 col-xs-12 ">
+                            </li>
+                            <li class="sin-product-list clearfix">
+                                <div class="list-pro-image fl">
                                     <a href="# "><img src="img/list-product/5.jpg " alt="product "></a>
+                                    <span class="list-pro-label ">sale</span>
                                 </div>
-                                <div class="list-pro-content col-lg-6 col-sm-7 col-xs-12 ">
-                                    <h2><a href="# ">Popline Tops</a></h2>
-                                    <div class="ratting fix ">
+                                <div class="list-pro-content fl">
+                                    <h2><a href="# ">Eurostar Hoodie</a></h2>
+                                    <div class="ratting clearfix">
                                         <i class="mo-star star active "></i>
                                         <i class="mo-star star active "></i>
                                         <i class="mo-star star active "></i>
@@ -950,19 +576,362 @@
                                         <button class="wishlist list-action "><i class="mo-heart "></i></button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-12 text-center ">
-                                <div class="more-product ">
-                                    <a class="shop-link " href="# "><i class="mo-more "></i></a>
-                                </div>
+                            </li>
+                        </ul>
+                        <div class="col-sm-12 text-center ">
+                            <div class="more-product ">
+                                <a class="shop-link " href="# "><i class="mo-more "></i></a>
                             </div>
                         </div>
+                    </div>
+                    <div class="tab-more">
+                        <i></i>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- shop-page end -->
+    <!-- blog start -->
+    <div class="blog">
+        <div class="w">
+            <div class="blog-title">
+                <h2>博客</h2>
+            </div>
+            <div class="blog-list">
+                <div class="blog-wrapper item-active">
+                    <ul class="clearfix">
+                        <li class="blog-item clearfix">
+                            <!-- Blog Image -->
+                            <div class="blog-image">
+                                <a href="#"><img src="img/blog/1.jpg" alt="blog"></a>
+                            </div>
+                            <!-- Blog Content -->
+                            <div class="blog-content">
+                                <span class="blog-date">December 26, 2015</span>
+                                <h2><a href="#">2018米兰时装周</a></h2>
+                                <p>2018年NO.21秋冬高级成衣米兰时装周发布秀,提供NO.212018年时装发布资讯,最全的秋冬高级成衣搭配 </p>
+                                <span>By</span>
+                                <a href="#" class="blog-author"> Kevin Smith</a>
+                            </div>
+                        </li>
+                        <li class="blog-item">
+                            <!-- Blog Image -->
+                            <div class=" blog-image">
+                                <a href="#"><img src="img/blog/2.jpg " alt="blog "></a>
+                            </div>
+                            <!-- Blog Content -->
+                            <div class="blog-content">
+                                <span class="blog-date ">December 15, 2015</span>
+                                <h2><a href="#">专业定制</a></h2>
+                                <p>全品类高级服装定制—始终致力于高级成衣定制行业,以精美做工和 体贴服务而为人称道,个性化的量体裁剪 </p>
+                                <span>By</span>
+                                <a href="#" class="blog-author"> Kevin Smith</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <span class="tab-arrow-l">&#xe918</span>
+                <span class="tab-arrow-r">&#xe919</span>
+            </div>
+        </div>
+    </div>
+    <!-- blog end -->
+    <!-- email-area start -->
+    <div class="email-area ">
+        <div class="w ">
+            <div class="email-container ">
+                <div class="email-text ">
+                    <h2>得到任何报价的通知!</h2>
+                    <p>订阅我们的通讯，以获得有关促销活动的通知</p>
+                </div>
+                <div class="email-form">
+                    <form action="#" id="email-form" class="clearfix ">
+                        <input type="text" placeholder="您的电邮地址 ">
+                        <input type="submit" value="提交 ">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- email-area end -->
+    <!-- brand start -->
+    <div class="brand">
+        <div class="w clearfix">
+            <div class="brand-title">
+                <h1>顶级品牌</h1>
+            </div>
+            <div class="brand-slider">
+                <div class="brand-wrapper item-active">
+                    <ul class="clearfix">
+                        <li class="brand-item"><img src="img/brands/1.png" alt="brand"></li>
+                        <li class="brand-item"><img src="img/brands/2.png" alt="brand"></li>
+                        <li class="brand-item"><img src="img/brands/1.png" alt="brand"></li>
+                        <li class="brand-item"><img src="img/brands/2.png" alt="brand"></li>
+                    </ul>
+                </div>
+                <span class="tab-arrow-l">&#xe918</span>
+                <span class="tab-arrow-r">&#xe919</span>
+            </div>
+        </div>
+    </div>
+    <!-- brand end -->
+    <!-- footer start -->
+    <div class="footer">
+        <div class="footer-top">
+            <div class="w clearfix  ">
+                <div class="about">
+                    <img src="img/footer-logo.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod empor incididunt oloremque laudantium,</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="mo-facebook">&#xe90f</i></a>
+                        <a href="#"><i class="mo-twitter">&#xe921</i></a>
+                        <a href="#"><i class="mo-google-plus">&#xe911</i></a>
+                        <a href="#"><i class="mo-pinterest">&#xe91c</i></a>
+                    </div>
+                </div>
+                <div class="address">
+                    <h3>联系地址</h3>
+                    <p>1025-1035 Park Ave, <br>New York, <br>NY 10028, USA</p>
+                    <p>+1 123-456-7890</p>
+                    <p>sales@koolinc.com</p>
+                </div>
+                <!-- Footer Widget Collection -->
+                <div class="collection">
+                    <h3>collection</h3>
+                    <ul>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Sale</a></li>
+                        <li><a href="#">Coming Soon</a></li>
+                    </ul>
+                </div>
+                <!-- Footer Widget Shop -->
+                <div class="shop">
+                    <h3>shop</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Shipping Methods</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="w clearfix">
+                <div class="copyright">
+                    <p>© 2016 <a href="#">wilylab</a>. All Rights Reserved</p>
+                </div>
+                <div class="payment"><img src="img/payment.png" alt="payment"></div>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->
+    <div id="quick-view" class="modal fade">
+        <div class="w clearfix">
+            <button class="model-close"><i class="mo-cross"></i></button>
+            <div class="product-info">
+                <div class="pro-info-cat">
+                    <p>Leather Shoe</p>
+                </div>
+                <div class="pro-title-rating clearfix">
+                    <h2>Buttero Casual</h2>
+                    <div class="ratting pro-info-ratting">
+                        <i class="mo-star star active"></i>
+                        <i class="mo-star star active"></i>
+                        <i class="mo-star star active"></i>
+                        <i class="mo-star star active"></i>
+                        <i class="mo-star star active"></i>
+                    </div>
+                </div>
+                <ul class="pro-info-tab-list clearfix">
+                    <li class="active"><a href="javascript:;">Description</a></li>
+                    <li><a href="javascript:;">Tags</a></li>
+                    <li class=""><a href="javascript:;">Reviews</a></li>
+                </ul>
+                <div class="pro-info-tab-container tab-content clearfix">
+                    <!-- Product Info Tab -->
+                    <div class="pro-info-tab tab-pane" id="description" style="display: block;">
+                        <p>These city boots won't let you down when it comes to comfort and practicality. Look manly and trendy on the daily in these versatile lace-up boots.</p>
+                        <ul>
+                            <li>Polished Leather</li>
+                            <li>Lace-up boot</li>
+                            <li>Round toe</li>
+                            <li>Felt lining</li>
+                        </ul>
+                        <div class="pro-color-size clearfix">
+                            <div class="pro-color">
+                                <h4>Colors:</h4>
+                                <ul>
+                                    <li><a href="#">color 1</a></li>
+                                    <li><a href="#">color 2</a></li>
+                                    <li><a href="#">color 3</a></li>
+                                    <li><a href="#">color 4</a></li>
+                                </ul>
+                            </div>
+                            <div class="pro-size">
+                                <h4>Sizes:</h4>
+                                <ul>
+                                    <li><a href="#">38</a></li>
+                                    <li><a href="#">39</a></li>
+                                    <li><a href="#">40</a></li>
+                                    <li><a href="#">41</a></li>
+                                    <li><a href="#">42</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pro-info-price clearfix">
+                            <h1 class="new">$ 259.00</h1>
+                            <h3 class="old">$ 380.00</h3>
+                        </div>
+                        <div class="pro-info-quantity-cart clearfix">
+                            <div class="pro-info-quantity fl clearfix">
+                                <h3>Quantity</h3>
+                                <div class="cart-plus-minus fl clearfix">
+                                    <input type="text" value="0" name="qtybutton" class="cart-plus-minus-box">
+                                    <button class="inc qtybutton"><i class="mo-caret-up"></i></button><button class="dec qtybutton"><i class="mo-caret-down"></i></button></div>
+                            </div>
+                            <button class="pro-info-addcart"><i class="mo-cart"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Product Tag Tab -->
+                    <div class="pro-tag-tab tab-pane" id="tags">
+                        <div class="pro-tag-wrapper">
+                            <a href="#">Leather Shoe</a>
+                            <a href="#">Shoe</a>
+                            <a href="#">Men</a>
+                        </div>
+                    </div>
+                    <!-- Product Review Tab -->
+                    <div class="pro-review-tab tab-pane" id="reviews">
+                        <div class="pro-review-container">
+                            <div class="sin-pro-review clearfix">
+                                <div class="rev-image fl">
+                                    <img src="img/comments/1.png" alt="">
+                                </div>
+                                <div class="rev-content fl clearfix">
+                                    <div class="rev-head">
+                                        <h3>Mingel Hoops</h3>
+                                        <span>December 28, 2015 at 3:20 pm</span>
+                                        <div class="ratting pro-rev-ratting fr">
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                        </div>
+                                    </div>
+                                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
+                                </div>
+                            </div>
+                            <div class="sin-pro-review clearfix">
+                                <div class="rev-image fl">
+                                    <img src="img/comments/2.png" alt="">
+                                </div>
+                                <div class="rev-content fl clearfix">
+                                    <div class="rev-head">
+                                        <h3>Mingel Hoops</h3>
+                                        <span>December 28, 2015 at 3:20 pm</span>
+                                        <div class="ratting pro-rev-ratting fr">
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                            <i class="mo-star star active"></i>
+                                        </div>
+                                    </div>
+                                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-rev-form fix">
+                            <h2>Add your review</h2>
+                            <form action="#" id="rev-form" class="moon-form">
+                                <div class="input-box input-box-2">
+                                    <input type="text" placeholder="Name">
+                                </div>
+                                <div class="input-box input-box-2">
+                                    <input type="text" placeholder="Email">
+                                </div>
+                                <div class="form-ratting">
+                                    <button class="form-sin-ratting">
+                                                        <i class="mo-star"></i>
+                                                    </button>
+                                    <button class="form-sin-ratting">
+                                                        <i class="mo-star"></i>
+                                                        <i class="mo-star"></i>
+                                                    </button>
+                                    <button class="form-sin-ratting">
+                                                        <i class="mo-star"></i>
+                                                        <i class="mo-star"></i>
+                                                        <i class="mo-star"></i>
+                                                    </button>
+                                    <button class="form-sin-ratting">
+                                                        <i class="mo-star"></i>
+                                                        <i class="mo-star"></i>
+                                                        <i class="mo-star"></i>
+                                                        <i class="mo-star"></i>
+                                                    </button>
+                                    <button class="form-sin-ratting">
+                                                        <i class="mo-star"></i>
+                                                        <i class="mo-star"></i>
+                                                        <i class="mo-star"></i>
+                                                        <i class="mo-star"></i>
+                                                        <i class="mo-star"></i>
+                                                    </button>
+                                </div>
+                                <div class="input-box">
+                                    <textarea name="review" id="rev-message" placeholder="Message" rows="5"></textarea>
+                                </div>
+                                <div class="input-box">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Image -->
+            <div class="product-image">
+                <div class="pro-image-tab-container tab-content clearfix">
+                    <!-- Product Image Tab -->
+                    <div class="pro-image-tab tab-pane active" id="image-1">
+                        <img src="img/pro-details/big-1.jpg" alt="">
+                    </div>
+                    <div class="pro-image-tab tab-pane" id="image-2">
+                        <img src="img/pro-details/big-2.jpg" alt="">
+                    </div>
+                    <div class="pro-image-tab tab-pane" id="image-3">
+                        <img src="img/pro-details/big-3.jpg" alt="">
+                    </div>
+                    <div class="pro-image-tab tab-pane" id="image-4">
+                        <img src="img/pro-details/big-4.jpg" alt="">
+                    </div>
+                </div>
+                <!-- Product Image Tab List -->
+                <ul class="pro-image-tab-list">
+                    <li class="active">
+                        <a href="javascript:;"><img src="img/pro-details/1.jpg" alt=""></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;"><img src="img/pro-details/2.jpg" alt=""></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;"><img src="img/pro-details/3.jpg" alt=""></a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;"><img src="img/pro-details/4.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            </dv>
+        </div>
+    </div>
+    <!-- scrollUp -->
+    <a href="#" id="scroll-up">&#xe91a</a>
 </body>
 
 </html>
