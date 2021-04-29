@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/checkout.js"></script>
+</head>
+
+<body>
+    <!-- heaer-top start -->
+    <div class="header-top">
+        <div class="w clearfix">
+            <div class="login fl">
+                <a class="link-regist" href="#">注册</a>
+                <span class="spacer">|</span>
+                <a class="link-login" href="#">登录</a>
+            </div>
+            <div class="language-currency fr">
+                <a class="language" href="#">语言</a>
+                <a class="currency-usd" href="#">USD</a>
+                <ul class="currency">
+                    <li>
+                        <a href="#">USD</a>
+                    </li>
+                    <li>
+                        <a href="#">URO</a>
+                    </li>
+                    <li>
+                        <a href="#">CBP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- heaer-top end -->
+    <!-- header-bottom start -->
+    <div class="header-bottom">
+        <div class="w clearfix">
+            <a href="index.html" class="logo"></a>
+            <ul class="nav clearfix">
+                <li>
+                    <a href="#">首页</a>
+                    <span class="nav-line" style="width: 30px;"></span>
+                    <ul class="nav-index">
+                        <li><a href="#">首页1</a></li>
+                        <li><a href="#">首页2</a></li>
+                        <li><a href="#">首页3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">商品</a>
+                    <span class="nav-line"></span>
+                    <ul class="nav-goods">
+                    </ul>
+                </li>
+                <li>
+
+                    <a href="#">我的</a>
+                    <span class="nav-line"></span>
+                    <ul class="nav-profile">
+                    </ul>
+                </li>
+                <li>
+
+                    <a href="#">博客</a>
+                    <span class="nav-line"></span>
+                </li>
+                <li>
+
+                    <a href="#">联系</a>
+                    <span class="nav-line"></span>
+                </li>
+            </ul>
+            <div class="cart">
+                <i class="moon-cart">&#xe90a</i>
+                <span class="cart-num">2</span>
+                <div class="cart-window">
+                    <h2>购物车</h2>
+                    <ul class="product">
+                        <li>
+                            <img src="./img/header-cart/1.jpg" alt="">
+                            <div class="product-info">
+                                <h3><a href="#">窄脚裤</a></h3>
+                                <p>Color: Philipha Wash</p>
+                                <span>$ 99 x 1</span>
+                            </div>
+                            <i class="product-del">&#xe90c</i>
+                        </li>
+                        <li>
+                            <img src="./img/header-cart/2.jpg" alt="">
+                            <div class="product-info">
+                                <h3><a href="#">眼镜太阳镜</a></h3>
+                                <p>Color: Philipha Wash</p>
+                                <span>$ 199 x 5</span>
+                            </div>
+                            <i class="product-del">&#xe90c</i>
+                        </li>
+                    </ul>
+                    <div class="price clearfix">
+                        <p>总数</p>
+                        <span>$ 1094.99</span>
+                    </div>
+                    <div class="view-cart">
+                        <a href="">查看购物车</a>
+                    </div>
+                    <div class="cart-foot">
+                        <a href="">进入结算</a>
+                    </div>
+                </div>
+            </div>
+            <div class="search">
+                <i class="moon-search">&#xe91d</i>
+                <input class="search-ipt" type="text" placeholder="搜索......">
+            </div>
+        </div>
+
+
+    </div>
+    <!-- header-bottom end -->
+    <div class="pages cart-page">
+        <div class="w">
+            <div class="cart-page-container clearfix">
+                <!-- Cart Page Tab List -->
+                <div class="cart-page-tablist">
+                    <ul class="clearfix">
+                        <li class="active"><a href="javascript:;" class="active"><span class="number">1</span> <p> 购物车</p></a></li>
+                        <li><a href="javascript:;"><span class="number">2</span> <p>结算</p></a></li>
+                        <li><a href="javascript:;"><span class="number">3</span> <p>待收货</p></a></li>
+                    </ul>
+                </div>
+                <!-- Cart Page Tab Container -->
+                <div class="tab-content">
+                    <!-- Cart Page Tab -->
+                    <div class="tab-pane">
+                        <div class="cart-page-title text-center">
+                            <h1>购物车</h1>
+                        </div>
+                        <form action="#" id="cart-form">
+                            <div class="table-responsive">
+                                <table class="table-cart">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="all"></div>
+                                                全选
+                                            </th>
+                                            <th>商品</th>
+                                            <th>价格</th>
+                                            <th>数量</th>
+                                            <th>全部</th>
+                                            <th>移除</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="td-select">
+                                                <div class="select"></div>
+                                            </td>
+                                            <td class="td-goods">
+                                                <div class="cart-items clearfix">
+                                                    <a href="#" class="cart-image"><img src="img/cart-product/1.jpg" alt=""></a>
+                                                    <div class="cart-item-content fix">
+                                                        <h3 class="title"><a href="#">Popline Tops</a></h3>
+                                                        <span>Size : <strong>M</strong></span>
+                                                        <span>Color : <strong>Dark Blue</strong></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="td-price"><span class="cart-price">$ 238</span></td>
+                                            <td class="td-num">
+                                                <div class="cart-qty"><span class="dec qtybtn">-</span><input maxlength="99" class="input-cart-qty" value="1"><span class="inc qtybtn">+</span></div>
+                                            </td>
+                                            <td class="td-total"><span class="cart-total-price">$ 238.00</span></td>
+                                            <td class="td-rm"><a href="javascript:;" class="cart-remove"><i class="mo-cross-rounde"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td-select">
+                                                <div class="select"></div>
+                                            </td>
+                                            <td class="td-goods">
+                                                <div class="cart-items fix">
+                                                    <a href="#" class="cart-image"><img src="img/cart-product/2.jpg" alt=""></a>
+                                                    <div class="cart-item-content fix">
+                                                        <h3 class="title"><a href="#">Shanos Matte Blue</a></h3>
+                                                        <span>Size : <strong>M</strong></span>
+                                                        <span>Color : <strong>Dark Blue</strong></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="td-price"><span class="cart-price">$ 356</span></td>
+                                            <td class="td-num">
+                                                <div class="cart-qty"><span class="dec qtybtn">-</span><input maxlength="99" class="input-cart-qty" value="1"><span class="inc qtybtn">+</span></div>
+                                            </td>
+                                            <td class="td-total"><span class="cart-total-price">$ 356.00</span></td>
+                                            <td class="td-rm"><a href="javascript:;" class="cart-remove"><i class="mo-cross-rounde"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td-select">
+                                                <div class="select"></div>
+                                            </td>
+                                            <td class="td-goods">
+                                                <div class="cart-items fix">
+                                                    <a href="#" class="cart-image"><img src="img/cart-product/3.jpg" alt=""></a>
+                                                    <div class="cart-item-content fix">
+                                                        <h3 class="title"><a href="#">Minrova Sleep Wear</a></h3>
+                                                        <span>Size : <strong>M</strong></span>
+                                                        <span>Color : <strong>Dark Blue</strong></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="td-price"><span class="cart-price">$ 128</span></td>
+                                            <td class="td-num">
+                                                <div class="cart-qty"><span class="dec qtybtn">-</span><input maxlength="99" class="input-cart-qty" value="1"><span class="inc qtybtn">+</span></div>
+                                            </td>
+                                            <td class="td-total"><span class="cart-total-price">$ 128.00</span></td>
+                                            <td class="td-rm"><a href="javascript:;" class="cart-remove"><i class="mo-cross-rounde"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="info clearfix">
+                                <div class="cost fl clearfix">
+                                    <div class="cost-addr fl">
+                                        <h3 class="title">Calculate Shipping Cost</h3>
+                                        <div class="input-wrapper">
+                                            <div class="input-box">
+                                                <select name="country">
+                                                                    <option value="united-states">United States</option>
+                                                                    <option value="united-states">United States</option>
+                                                                    <option value="united-states">United States</option>
+                                                                    <option value="united-states">United States</option>
+                                                                    <option value="united-states">United States</option>
+                                                                    <option value="united-states">United States</option>
+                                                                </select>
+                                            </div>
+                                            <div class="input-box">
+                                                <select name="state">
+                                                                    <option value="united-states">State / Province</option>
+                                                                    <option value="united-states">State / Province</option>
+                                                                    <option value="united-states">State / Province</option>
+                                                                    <option value="united-states">State / Province</option>
+                                                                    <option value="united-states">State / Province</option>
+                                                                </select>
+                                            </div>
+                                            <div class="input-box">
+                                                <input type="text" placeholder="State / Province">
+                                            </div>
+                                            <input type="submit" value="Calculate Shipping">
+                                        </div>
+                                    </div>
+                                    <div class="coupon-discount fl">
+                                        <h3 class="title">Coupon Discount</h3>
+                                        <div class="coupon-wrapper">
+                                            <p>Enter your coupon code if you have one</p>
+                                            <div class="input-box">
+                                                <input type="text" placeholder="Enter your code here!">
+                                            </div>
+                                            <input type="submit" value="Apply Coupon">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payment-details fr">
+                                    <h3 class="title">付款方式</h3>
+                                    <div class="payment-wrapper">
+                                        <div class="subtotal clearfix">
+                                            <p class="fl">合计</p>
+                                            <span class="fr">$ 0.00</span>
+                                        </div>
+                                        <div class="shipping clearfix">
+                                            <p class="fl">配送</p>
+                                            <span class="fr">免费配送</span>
+                                        </div>
+                                        <div class="grandtotal clearfix">
+                                            <span class="fr">$ 0.00</span>
+                                        </div>
+                                        <div class="procced-checkout"><button class="checkout-btn">结算</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Cart Page Tab -->
+                    <div class="tab-pane" style="display: none;">
+                        <div class="cart-page-title cart-page-title-2">
+                            <h1>结算</h1>
+                            <p>付款信息</p>
+                        </div>
+
+                    </div>
+                    <!-- Cart Page Tab -->
+                    <div class="tab-pane" style="display: none;">
+                        <div class="order-complete-mgs">
+                            <p>Thank you. Your Order Has been Received.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
